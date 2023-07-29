@@ -24,7 +24,7 @@ fi
 apt update &>>$LOG_FILE
 VALIDATE $? "updating yum"
 
-wget -O /etc/yum.repos.d/jenkins.repo \
+wget -O /etc/apt.repos.d/jenkins.repo \
     https://pkg.jenkins.io/redhat-stable/jenkins.repo &>>$LOG_FILE
 VALIDATE $? "adding jenkins repo"
 
